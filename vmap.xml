@@ -1,0 +1,23 @@
+<VMAP xmlns="http://www.iab.net/videosuite/vmap" version="1.0">
+  
+  <AdBreak timeOffset="start" breakType="linear">
+    
+    <AdSource allowMultipleAds="true" followRedirects="true">
+      <AdTagURI templateType="vast3">
+        <![CDATA[
+        https://get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/generic?ip=108.213.126.254
+        ]]>
+      </AdTagURI>
+    </AdSource>
+
+    <AdSource allowMultipleAds="true" followRedirects="true">
+      <AdTagURI templateType="vast3">
+        <![CDATA[
+        https://get.truex.com/132f66121635ac312e42f1eb018081d50d10fe2a/vast/idvx/generic?ip=108.213.126.254
+        ]]>
+      </AdTagURI>
+    </AdSource>
+
+  </AdBreak>
+
+</VMAP>
