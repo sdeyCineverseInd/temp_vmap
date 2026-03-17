@@ -1,25 +1,23 @@
-<VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
+<?xml version="1.0" encoding="UTF-8"?>
+<vmap:VMAP xmlns:vmap="http://www.iab.net/videosuite/vmap" version="1.0">
 
-  <AdBreak timeOffset="start" breakType="linear">
+  <!-- Pre-roll Ad Break -->
+  <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll">
 
-    <!-- TrueX Interactive -->
-    <AdSource id="truex" allowMultipleAds="true" followRedirects="true">
-      <AdTagURI templateType="vast3">
-        <![CDATA[
-        https://get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/generic?ip=108.213.126.254
-        ]]>
-      </AdTagURI>
-    </AdSource>
+    <!-- TrueX Ad -->
+    <vmap:AdSource id="truex" allowMultipleAds="true" followRedirects="true">
+      <vmap:AdTagURI templateType="vast3">
+        <![CDATA[https://get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/generic?ip=108.213.126.254]]>
+      </vmap:AdTagURI>
+    </vmap:AdSource>
 
-    <!-- IDVX Fallback Video -->
-    <AdSource id="idvx" allowMultipleAds="true" followRedirects="true">
-      <AdTagURI templateType="vast3">
-        <![CDATA[
-        https://get.truex.com/132f66121635ac312e42f1eb018081d50d10fe2a/vast/idvx/generic?ip=108.213.126.254
-        ]]>
-      </AdTagURI>
-    </AdSource>
+    <!-- IDVX Ad -->
+    <vmap:AdSource id="idvx" allowMultipleAds="true" followRedirects="true">
+      <vmap:AdTagURI templateType="vast3">
+        <![CDATA[https://get.truex.com/132f66121635ac312e42f1eb018081d50d10fe2a/vast/idvx/generic?ip=108.213.126.254]]>
+      </vmap:AdTagURI>
+    </vmap:AdSource>
 
-  </AdBreak>
+  </vmap:AdBreak>
 
-</VMAP>
+</vmap:VMAP>
