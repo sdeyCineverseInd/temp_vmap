@@ -22,5 +22,16 @@ https://get.truex.com/132f66121635ac312e42f1eb018081d50d10fe2a/vast/idvx/generic
       </vmap:AdTagURI>
     </vmap:AdSource>
   </vmap:AdBreak>
+  
+  <!-- Pre-roll IDVX Ad Break -->
+  <vmap:AdBreak timeOffset="start" breakType="linear" breakId="preroll-idvx">
+    <vmap:AdSource id="preroll-ad-3" allowMultipleAds="false" followRedirects="true">
+      <vmap:AdTagURI templateType="vast3">
+        <![CDATA[
+            https://pubads.g.doubleclick.net/gampad/ads?iu=/21775744923/external/single_ad_samples&sz=640x480&cust_params=sample_ct%3Dlinear&ciu_szs=300x250%2C728x90&gdfp_req=1&output=vast&unviewed_position_start=1&env=vp&correlator=
+        ]]>
+      </vmap:AdTagURI>
+    </vmap:AdSource>
+  </vmap:AdBreak>
 
 </vmap:VMAP>
