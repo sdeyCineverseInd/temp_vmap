@@ -1,25 +1,29 @@
-<VMAP xmlns="http://www.iab.net/videosuite/vmap" version="1.0">
-
-  <AdBreak timeOffset="start" breakType="linear">
-
-    <!-- TrueX Interactive -->
-    <AdSource id="truex" allowMultipleAds="true" followRedirects="true">
-      <AdTagURI templateType="vast3">
-        <![CDATA[
-        https://get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/generic?ip=108.213.126.254
-        ]]>
-      </AdTagURI>
-    </AdSource>
-
-    <!-- IDVX Fallback Video -->
-    <AdSource id="idvx" allowMultipleAds="true" followRedirects="true">
-      <AdTagURI templateType="vast3">
-        <![CDATA[
-        https://get.truex.com/132f66121635ac312e42f1eb018081d50d10fe2a/vast/idvx/generic?ip=108.213.126.254
-        ]]>
-      </AdTagURI>
-    </AdSource>
-
-  </AdBreak>
-
-</VMAP>
+<VAST version="4.0">
+<Ad id="super_tag">
+<InLine>
+<AdSystem>trueX</AdSystem>
+<AdTitle>
+<![CDATA[ VAST Super Tag ]]>
+</AdTitle>
+<Impression/>
+<Description>
+<![CDATA[ get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/config?ip=108.213.126.254 ]]>
+</Description>
+<Creatives>
+<Creative id="placeholder_video">
+<Linear>
+<Duration>00:00:30</Duration>
+<AdParameters>
+<![CDATA[ {"user_id":"{{DEVICE_ID}}","placement_hash":"22c36d3926383ba62994809a60b4649e3ced1070","vast_config_url":"get.truex.com/22c36d3926383ba62994809a60b4649e3ced1070/vast/config?ip=108.213.126.254"} ]]>
+</AdParameters>
+<MediaFiles>
+<MediaFile delivery="progressive" type="video/mp4" width="1280" height="720" apiFramework="truex">
+<![CDATA[ https://media.truex.com/m/video/truexloadingplaceholder-30s.mp4 ]]>
+</MediaFile>
+</MediaFiles>
+</Linear>
+</Creative>
+</Creatives>
+</InLine>
+</Ad>
+</VAST>
